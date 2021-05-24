@@ -1,19 +1,19 @@
 package com.example.homework3;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.homework3.Entities.CompanyEntity;
 import com.example.homework3.IBM.Example;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.Executors;
 
 import retrofit2.Call;
@@ -69,5 +69,11 @@ public class MainActivity2 extends AppCompatActivity {
                         Log.i("Jane","Failure"+t);
                     }
                 });
+
+
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE){
+            BlankFragment blankFragment=BlankFragment.newInstance("IBM", "1996 - 2020", ContextCompat.getColor(this, R.color.teal_700));
+            getSupportFragmentManager().beginTransaction().add(R.id.fr_container,blankFragment).commit();
+        }
     }
 }

@@ -1,30 +1,19 @@
 package com.example.homework3;
 
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
 import com.example.homework3.Entities.CompanyEntity;
-import com.example.homework3.IBM.Example;
 import com.example.homework3.MVC.Repository;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Executors;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity3 extends AppCompatActivity {
     private Repository repository;
@@ -53,6 +42,11 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             }
         });
+
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE){
+            BlankFragment blankFragment=BlankFragment.newInstance("Bank of America Corporation", "1992 - 2020", ContextCompat.getColor(this, R.color.blue));
+            getSupportFragmentManager().beginTransaction().add(R.id.fr_container3,blankFragment).commit();
+        }
 
 /*        Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://www.alphavantage.co")//базовая часть адреса

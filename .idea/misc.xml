@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout-land/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout-land/activity_main2.xml" value="0.1578125" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout-land/activity_main3.xml" value="0.1578125" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout-land/activity_name3.xml" value="0.31040564373897706" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout-land/activiy_main.xml" value="0.1" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout/activity_main.xml" value="0.11208853575482407" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout/activity_main2.xml" value="0.33" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout/activity_main3.xml" value="0.33" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout/fragment_blank.xml" value="0.25" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/HomeWork3/app/src/main/res/layout/layout.xml" value="0.1" />
       </map>
     </option>
