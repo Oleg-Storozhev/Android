@@ -19,7 +19,7 @@
 
         android:paddingBottom="10dp"
 
-        ></EditText>
+        />
 
     <EditText
 
@@ -33,6 +33,8 @@
 
         android:paddingBottom="10dp"
 
-        ></EditText>
+        android:onClick="EDClick2"
+
+        />
 
 </LinearLayout>

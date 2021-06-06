@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.homework3.Entities.CompanyEntity;
 import com.example.homework3.MVC.Repository;
 
+import java.util.Objects;
+
 public class MainActivity3 extends AppCompatActivity {
     private Repository repository;
     LiveData<CompanyEntity> companyData;
@@ -36,7 +38,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onChanged(CompanyEntity companyEntity) {
                 if (companyData!=null) {
-                    Log.i("OLEG temp", String.valueOf(companyData.getValue().fiscalDateEnding));
+                    Log.i("OLEG temp", String.valueOf(Objects.requireNonNull(companyData.getValue()).fiscalDateEnding));
                     fiscalDateEnding.setText(String.valueOf(companyData.getValue().fiscalDateEnding));
                     reportedEPS.setText(String.valueOf(companyData.getValue().reportedEPS));
                 }

@@ -2,6 +2,7 @@ package com.example.homework3;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
@@ -76,7 +77,7 @@ public class BlankFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_blank, container, false);
     }
 
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         textView = view.findViewById(R.id.text_fragment);
         textView2 = view.findViewById(R.id.text_fragment2);

@@ -3,6 +3,7 @@ package com.example.homework3;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -69,6 +70,14 @@ public class MainActivity2 extends AppCompatActivity {
                         Log.i("Jane","Failure"+t);
                     }
                 });
+
+        TextView tView = (TextView) findViewById(R.id.text_fragment);
+        tView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tView.getText();
+            }
+        });
 
 
         if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE){
